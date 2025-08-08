@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Роль и код | RoleLoginApp</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./role-gate.js"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="title">Выбор роли</div>
+      <div class="subtitle">Сначала выберите роль, затем введите код доступа</div>
+    </div>
+
+    <form id="role-form" novalidate>
+      <div class="field">
+        <label>Роль</label>
+        <div class="role-switch">
+          <input type="radio" id="role-admin" name="role" value="admin" checked />
+          <label for="role-admin">Администратор</label>
+          <input type="radio" id="role-operator" name="role" value="operator" />
+          <label for="role-operator">Оператор</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="code">Код доступа</label>
+        <input id="code" class="input" type="text" placeholder="Для админа 1234567890, для оператора 123456789" required />
+      </div>
+
+      <button id="go-btn" class="btn" type="submit">Продолжить</button>
+      <div id="role-error" class="error"></div>
+    </form>
+
+    <div class="row" style="justify-content:flex-end; margin-top:12px;">
+      <button id="logout" class="btn" style="width:auto; padding:8px 12px;">Выйти</button>
+    </div>
+  </div>
+</body>
+</html>

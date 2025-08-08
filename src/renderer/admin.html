@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Администратор | Участники</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./admin.js"></script>
+</head>
+<body>
+  <div class="card" style="width: 900px;">
+    <div class="row space-between" style="margin-bottom: 12px;">
+      <div class="title">Участники</div>
+      <button id="logout" class="btn" style="width:auto; padding:8px 12px;">Выйти</button>
+    </div>
+
+    <div class="subtitle">Здесь будет функционал для управления участниками (потом добавим пункты 3.1 и т.д.). Сейчас — демо-таблица.</div>
+
+    <table class="table">
+      <thead>
+        <tr><th>ID</th><th>Имя</th><th>Почта</th><th>Статус</th></tr>
+      </thead>
+      <tbody id="tbl">
+        <tr><td>1</td><td>Иван Петров</td><td>ivan@example.com</td><td>Активен</td></tr>
+        <tr><td>2</td><td>Ольга Смирнова</td><td>olga@example.com</td><td>Ожидает</td></tr>
+        <tr><td>3</td><td>Сергей К.</td><td>sergey@example.com</td><td>Заблокирован</td></tr>
+      </tbody>
+    </table>
+
+    <div class="row" style="justify-content:flex-end; margin-top:12px;">
+      <button class="btn" disabled style="width:auto; padding:8px 12px;">Добавить участника (скоро)</button>
+    </div>
+  </div>
+</body>
+</html>

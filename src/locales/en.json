@@ -1,0 +1,21 @@
+{
+  "welcome": "Welcome",
+  "subtitle": "Sign in as administrator or operator",
+  "username": "Login",
+  "password": "Password",
+  "role": "Role",
+  "admin": "Admin",
+  "operator": "Operator",
+  "remember": "Remember me",
+  "login": "Sign in",
+  "checking": "Checking...",
+  "invalid": "Invalid login/password/role",
+  "logout": "Log out",
+  "adminPanel": "Administrator Panel",
+  "operatorWorkspace": "Operator Workspace",
+  "brand": "RoleLoginApp",
+  "theme": "Theme",
+  "language": "Language",
+  "dark": "Dark",
+  "light": "Light"
+}

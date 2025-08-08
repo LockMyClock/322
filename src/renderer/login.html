@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вход | RoleLoginApp</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./login_register.js"></script>
+</head>
+<body>
+  <div class="card" style="overflow:hidden">
+    <div class="header">
+      <div class="title">Добро пожаловать 👋</div>
+      <div class="subtitle">Введите логин и пароль</div>
+    </div>
+
+    <section id="login-panel">
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="identifier">Email или логин</label>
+          <input id="identifier" class="input" type="text" placeholder="email@example.com или admin" autocomplete="username" required />
+        </div>
+        <div class="field password-wrap">
+          <label for="password">Пароль</label>
+          <input id="password" class="input" type="password" placeholder="Пароль" autocomplete="current-password" required />
+          <button type="button" id="toggle-eye" class="toggle-eye">👁️</button>
+        </div>
+        <div class="row" style="gap:8px; align-items:center;">
+          <input type="checkbox" id="remember" checked />
+          <label for="remember">Запомнить меня</label>
+        </div>
+        <button class="btn" id="login-btn" type="submit">Войти</button>
+        <div class="error" id="login-error"></div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Активация | RoleLoginApp</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./activation.js"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="title">Активация</div>
+      <div class="subtitle">Введите ключ активации, выданный вне программы</div>
+    </div>
+
+    <form id="act-form" novalidate>
+      <div class="field">
+        <label for="key">Ключ</label>
+        <input id="key" class="input" type="text" placeholder="1234567890" required />
+      </div>
+      <button id="act-btn" class="btn" type="submit">Активировать</button>
+      <div id="act-error" class="error"></div>
+    </form>
+
+    <div class="row" style="justify-content:flex-end; margin-top:10px;">
+      <button id="logout" class="btn" style="width:auto; padding:8px 12px;">Выйти</button>
+    </div>
+  </div>
+</body>
+</html>
